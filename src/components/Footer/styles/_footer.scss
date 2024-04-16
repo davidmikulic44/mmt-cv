@@ -1,0 +1,45 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+footer {
+  height: 324px;
+  background-color: $text-primary;
+  color: $background-primary;
+  font-weight: 200;
+  @include FlexCenter;
+  justify-content: space-between;
+  padding: 12px 60px 12px 60px;
+  border-top: 15px solid $color-primary;
+}
+
+.logo-link-white {
+  width: 40px;
+  fill: white;
+  cursor: pointer;
+}
+
+.footer-text {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+#about-text {
+  width: 300px;
+}
+
+.links-content {
+  @include FlexCenter;
+  gap: 10px;
+}
+
+.footer-links {
+  @include FlexColumn;
+  gap: 5px;
+}
+
+.about {
+  @include FlexColumn;
+  justify-content: space-between;
+}

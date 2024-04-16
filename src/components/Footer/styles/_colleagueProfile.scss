@@ -1,0 +1,39 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+
+.line-small {
+  height: 2.4px;
+  width: 0;
+  background-color: $background-primary;
+  transition: all 0.3s ease;
+  bottom: 3px;
+}
+
+.colleague {
+  @include FlexColumn;
+  @include FlexCenter;
+}
+
+.colleague-image {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.colleague-profile {
+  @include FlexCenterVertical;
+  gap: 20px;
+  &:hover {
+    cursor: pointer;
+    .line-small {
+      width: 100%;
+    }
+  }
+}
+
+.colleagues {
+  @include FlexColumn;
+  gap: 10px;
+}

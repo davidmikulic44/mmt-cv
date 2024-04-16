@@ -1,0 +1,17 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+.projects-feed-container {
+  padding: 100px;
+  @include FlexColumn;
+  gap: 100px;
+  width: 1700px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.project-right {
+  align-self: flex-end;
+}

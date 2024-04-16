@@ -1,0 +1,87 @@
+@keyframes ScaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@mixin CategoryAnimationLeftToRight($color) {
+  background-image: linear-gradient(to right, transparent 50%, $color 50%);
+  background-position: -100 -100;
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  &.active,
+  &:hover:not(.active) {
+    background-position: 100% 0;
+  }
+}
+
+@mixin CategoryAnimation($color) {
+  background-image: linear-gradient(to left, transparent 50%, $color 50%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  &.active,
+  &:hover:not(.active) {
+    background-position: 0 0;
+  }
+}
+
+@keyframes shake1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 15px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes shake2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, 0px);
+  }
+  50% {
+    transform: translate(10px, 0px);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes shake3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -15px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

@@ -1,0 +1,21 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+.header-title-container {
+  background-color: $color-primary;
+  height: 290px;
+  @include FlexCenter;
+}
+
+.header-title {
+  font-family: $font-primary;
+  font-size: 314px;
+  padding-top: 100px;
+  letter-spacing: -17px;
+  line-height: 396px;
+  text-wrap: nowrap;
+  user-select: none;
+  font-weight: 800;
+}

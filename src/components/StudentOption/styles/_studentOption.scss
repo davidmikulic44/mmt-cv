@@ -1,0 +1,34 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+.student-option-image {
+  border-radius: 50%;
+  width: 295px;
+}
+
+.student-option-name {
+  font-family: $font-primary;
+  text-align: center;
+  font-size: 59px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.student-option-container {
+  @include FlexCenterColumn;
+  height: 100%;
+  width: 100%;
+  background-color: $background-secondary;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $background-primary;
+    cursor: pointer;
+    .student-option-image {
+      animation: ScaleAnimation 0.4s infinite linear;
+      border: $text-primary 4px solid;
+      transition: border-width 0.05s linear;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+
+.student-options-container {
+  @include FlexCenterHorizontal;
+  justify-content: space-around;
+  height: 100vh;
+}

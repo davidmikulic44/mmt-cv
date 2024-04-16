@@ -1,0 +1,94 @@
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/mixins.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/animations.scss";
+
+.about-me-container {
+  min-width: 60%;
+  max-width: 70%;
+  @include FlexCenter;
+  background-color: $color-green1;
+  padding: 50px;
+  gap: 50px;
+  border-radius: 25px;
+  border: 4px solid black;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-me-container-big {
+  min-width: 60%;
+  max-width: 70%;
+  @include FlexColumn;
+  background-color: $color-green1;
+  padding: 50px;
+  gap: 50px;
+  border-radius: 25px;
+  border: 4px solid black;
+  overflow: hidden;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.about-me-heading {
+  font-size: 49px;
+  font-weight: 700;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.profile-picture-big {
+  width: 900px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.about-me-link {
+  height: 70px;
+  width: 70px;
+  filter: invert(1);
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    filter: invert(0);
+    cursor: pointer;
+  }
+}
+
+.links {
+  @include FlexCenter;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.about-me-side {
+  @include FlexCenterColumn;
+  gap: 25px;
+}
+
+.about-me-text {
+  align-self: flex-start;
+  @include FlexColumn;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.brown {
+  background-color: $color-brown;
+}
+
+.blue {
+  background-color: $color-blue;
+}
