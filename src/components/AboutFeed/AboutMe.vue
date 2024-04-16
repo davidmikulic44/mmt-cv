@@ -21,6 +21,10 @@ const changeImageSize = () => {
     imageClass.value = "profile-picture";
   }
 };
+
+import github from '../../assets/Github.svg';
+import linkedin from '../../assets/LinkedIn.svg';
+
 </script>
 
 <template>
@@ -35,12 +39,12 @@ const changeImageSize = () => {
       <div class="links">
         <Link
           linkUrl="https://github.com/davidmikulic44/"
-          imageUrl="/src/assets/Github.svg"
+          :imageUrl="github"
           imageClass="about-me-link"
         ></Link>
         <Link
           linkUrl="https://www.linkedin.com/in/david-mikuli%C4%87-b43a83295/"
-          imageUrl="/src/assets/LinkedIn.svg"
+          :imageUrl="linkedin"
           imageClass="about-me-link"
         ></Link>
       </div>

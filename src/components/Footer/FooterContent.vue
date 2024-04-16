@@ -1,6 +1,9 @@
 <script setup>
 import ColleagueProfile from "./ColleagueProfile.vue";
 import Link from "../Links/Link.vue";
+import github from '../../assets/Github.svg';
+import linkedin from '../../assets/LinkedIn.svg';
+import rade from '../../assets/rade ulica.jpg'
 </script>
 
 <template>
@@ -16,29 +19,29 @@ import Link from "../Links/Link.vue";
       <div class="links-content">
         <Link
           linkUrl="https://github.com/davidmikulic44/"
-          imageUrl="/src/assets/Github.svg"
+          :imageUrl="github"
           imageClass="logo-link-white"
         ></Link>
         <Link
           linkUrl="https://www.linkedin.com/in/david-mikuli%C4%87-b43a83295/"
-          imageUrl="/src/assets/LinkedIn.svg"
+          :imageUrl="linkedin"
           imageClass="logo-link-white"
         ></Link>
       </div>
     </section>
     <section class="colleagues">
       <ColleagueProfile
-        imageUrl="/src/assets/rade ulica.jpg"
+        :imageUrl="rade"
         name="Rade Ulica"
         siteUrl="https://www.youtube.com/watch?v=EpWyKn2t8HQ"
       ></ColleagueProfile>
       <ColleagueProfile
-        imageUrl="/src/assets/rade ulica.jpg"
+        :imageUrl="rade"
         name="Rade Ulica"
         siteUrl="https://www.youtube.com/watch?v=EpWyKn2t8HQ"
       ></ColleagueProfile
       ><ColleagueProfile
-        imageUrl="/src/assets/rade ulica.jpg"
+        :imageUrl="rade"
         name="Rade Ulica"
         siteUrl="https://www.youtube.com/watch?v=EpWyKn2t8HQ"
       ></ColleagueProfile>

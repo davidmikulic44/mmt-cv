@@ -5,18 +5,23 @@ import VideoSection from "./VideoSection.vue";
 import RadialGradientFollowMouse from "../RadialGradientFollowMouse/RadialGradientFollowMouse.vue";
 import "./styles/_aboutMe.scss";
 import "./styles/_aboutFeed.scss";
+
+import david300 from '../../assets/david300x300.png'
+import david900 from '../../assets/david900x900.png'
+import kutina300 from '../../assets/kutina300x300.bmp'
+import kutina900 from '../../assets/kutina900x900.bmp'
 </script>
 
 <template>
   <RadialGradientFollowMouse>
     <div class="about-container">
       <AboutMe
-        imageUrl="/src/assets/david300x300.png"
-        imageUrlBig="/src/assets/david900x900.png"
+        :imageUrl="david300"
+        :imageUrlBig="david900"
       ></AboutMe>
       <AboutFeedCard
-        imageUrl="/src/assets/kutina300x300.bmp"
-        imageUrlBig="/src/assets/kutina900x900.bmp"
+        :imageUrl="kutina300"
+        :imageUrlBig="kutina900"
       ></AboutFeedCard>
       <VideoSection></VideoSection>
     </div>

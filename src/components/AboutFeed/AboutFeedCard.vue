@@ -1,5 +1,6 @@
 <script setup>
 import { ref, defineProps } from "vue";
+import davidAudio from '../../assets/david.mp3'
 
 const props = defineProps([
   "imageUrl",
@@ -40,7 +41,7 @@ const changeImageSize = () => {
           U slobodno vrijeme se bavim glazbom, nogometom i trčanjem.
         </p>
         <audio controls class="audio">
-            <source src="/src/assets/david.mp3">
+            <source :src="davidAudio">
         </audio>
       </div>
     </section>

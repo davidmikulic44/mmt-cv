@@ -11,7 +11,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/mmt-cv/'),
   routes,
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {

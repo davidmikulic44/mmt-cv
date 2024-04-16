@@ -5,4 +5,12 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/mmt-cv/',
   plugins: [vue()],
+  assetsInclude: [
+    '**/*.mp4',
+    '**/*.jpg',
+    '**/*.png',
+    '**/*.gif',
+    '**/*.bmp',
+    '**/*.mp3' // Add MP3 files
+  ]
 })
